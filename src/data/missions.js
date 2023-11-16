@@ -1,6 +1,6 @@
-const USA = 'Estados Unidos';
+const USA = 'USA';
 const URSS = 'URSS';
-const INTERESTELAR = 'Espaço interestelar';
+const INTERESTELAR = 'Interestelar';
 
 const Missions = [
   {
@@ -72,7 +72,7 @@ const Missions = [
   {
     name: 'Cassini-Huygens',
     year: '1997',
-    country: 'Estados Unidos e Europa',
+    country: 'EUA e USA',
     destination: 'Saturno',
   },
   {
@@ -84,7 +84,7 @@ const Missions = [
   {
     name: 'Estação Internacional Espacial',
     year: '1998',
-    country: 'Estados Unidos e Rússia',
+    country: 'USA e URSS',
     destination: 'Órbita terrestre',
   },
   {
@@ -120,7 +120,7 @@ const Missions = [
   {
     name: 'Telescópio Espacial James Webb',
     year: '2021',
-    country: 'Estados Unidos, União Europeia e Canadá',
+    country: 'USA, União Europeia e Canadá',
     destination: INTERESTELAR,
   },
 ];

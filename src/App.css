@@ -1,3 +1,171 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('./images/background.png');
+  background-size: cover;
+  color: rgba(240, 248, 255, 0.836);
+  font-family: 'Epilogue' , sans-serif;
+  height: 100vh;
+}
+
+ion-icon {
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.solar-system {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Estiliza o card do planeta */
+.card-planet {
+  gap: 1rem;
   text-align: center;
+}
+
+.card-img-planet {
+  align-items: center;
+  display: flex;
+  height: 300px;
+}
+
+/* Estiliza Missions */
+.conteiner-missions {
+  background: rgba(240, 248, 255, 0.103);
+  border-radius: 20px;
+  margin: 3rem auto;
+  padding: 1rem;
+  width: 70%;
+}
+
+.conteiner-missions > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card-misson {
+  background: rgba(10, 11, 12, 0.5);
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 200px;
+  width: 500px;
+}
+
+.card-misson > div {
+  align-items: center;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 27px;
+}
+
+.card-misson > div > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.card-misson > div > p {
+  margin-right: 50px;
+}
+
+.mission-name {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin: 28px 27px 27px 10px;
+}
+
+/* Estiliza os planetas */
+.Mercurio {
+  animation: go-up 1s infinite alternate;
+  height: 30px;
+  width: 40px;
+}
+
+.Venus {
+  animation: go-back 1s infinite alternate;
+  height: 75px;
+  width: 100px;
+}
+
+.Terra {
+  animation: go-up 1s infinite alternate;
+  height: 75px;
+  width: 100px;
+}
+
+.Marte {
+  animation: go-back 1s infinite alternate;
+  height: 50px;
+  width: 65px;
+}
+
+.Jupiter {
+  animation: go-back 1s infinite alternate;
+  height: 200px;
+  width: 270px;
+}
+
+.Saturno {
+  animation: go-up 1s infinite alternate;
+  height: 210px;
+  width: 280px;
+}
+
+.Urano {
+  animation: go-back 1s infinite alternate;
+  height: 100px;
+  width: 140px;
+}
+
+.Netuno {
+  animation: go-up 1s infinite alternate;
+  height: 100px;
+  width: 150px;
+}
+
+/* Propiedades padrao */
+.text-center {
+  text-align: center;
+}
+
+@keyframes go-back {
+
+  from {
+    transform: translateY(10px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+
+}
+
+@keyframes go-up {
+
+  from {
+    transform: translateY(-5px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+
 }

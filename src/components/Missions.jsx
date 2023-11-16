@@ -15,9 +15,9 @@ class Missions extends Component {
       />
     ));
     return (
-      <div data-testid="missions">
+      <div className="conteiner-missions" data-testid="missions">
         <Title headline="Missões" />
-        {missionsRender}
+        <div>{missionsRender}</div>
       </div>
     );
   }
