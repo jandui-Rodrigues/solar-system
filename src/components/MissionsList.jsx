@@ -15,9 +15,13 @@ class Missions extends Component {
       />
     ));
     return (
-      <div className="conteiner-missions" data-testid="missions">
+      <div
+        className="conteiner-missions mb-2 flex
+      flex-col justify-center items-center gap-6"
+        data-testid="missions"
+      >
         <Title headline="Missões" />
-        <div>{missionsRender}</div>
+        <div className="grid grid-cols-2 gap-[2rem]">{missionsRender}</div>
       </div>
     );
   }
