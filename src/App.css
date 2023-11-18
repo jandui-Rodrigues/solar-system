@@ -1,36 +1,20 @@
-* {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background: url('./images/background.png');
   background-size: cover;
   color: rgba(240, 248, 255, 0.836);
-  font-family: 'Epilogue' , sans-serif;
-  height: 100vh;
+  font-family: Courier , monospace;
 }
 
-ion-icon {
-  margin-right: 10px;
-}
-
-h1 {
-  font-size: 3rem;
-  margin-top: 3rem;
-}
-
-.title {
-  font-size: 2rem;
-  margin: 2rem 0;
-}
-
-.solar-system {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
 
 /* Estiliza o card do planeta */
 .card-planet {
@@ -147,7 +131,6 @@ h1 {
 }
 
 @keyframes go-back {
-
   from {
     transform: translateY(10px);
   }
@@ -155,11 +138,9 @@ h1 {
   to {
     transform: translateY(0);
   }
-
 }
 
 @keyframes go-up {
-
   from {
     transform: translateY(-5px);
   }
@@ -167,5 +148,4 @@ h1 {
   to {
     transform: translateY(0);
   }
-
 }
