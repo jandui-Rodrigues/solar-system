@@ -37,12 +37,12 @@ body {
   width: 70%;
 }
 
-.conteiner-missions > div {
+/* .conteiner-missions > div {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-}
+} */
 
 .card-misson {
   background: rgba(10, 11, 12, 0.5);
