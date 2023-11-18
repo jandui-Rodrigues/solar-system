@@ -7,11 +7,11 @@ import './App.css';
 class App extends React.Component {
   render() {
     return (
-      <>
+      <div className="bg-hero-pattern py-16 h-full bg-cover">
         <Header />
         <SolarSystem />
         <Missions />
-      </>
+      </div>
     );
   }
 }

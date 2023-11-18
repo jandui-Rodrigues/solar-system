@@ -6,9 +6,9 @@ import PlanetCard from './PlanetCard';
 class SolarSystem extends Component {
   render() {
     return (
-      <div data-testid="solar-system">
+      <div>
         <Title headline="Planetas" />
-        <div className="solar-system">
+        <div className="flex justify-center">
           {planets.map(({ name, image }) => (
             <PlanetCard key={ name } planetName={ name } planetImage={ image } />
           ))}

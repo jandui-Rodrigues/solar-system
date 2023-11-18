@@ -15,11 +15,6 @@ body {
   font-family: Courier , monospace;
 }
 
-.solar-system {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
 
 /* Estiliza o card do planeta */
 .card-planet {

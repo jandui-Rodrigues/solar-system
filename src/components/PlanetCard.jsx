@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 class PlanetCard extends Component {
   render() {
     const { planetName, planetImage } = this.props;
-    const planet = planetName.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    const planetNotacent = planetName.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     return (
       <div className="card-planet" data-testid="planet-card">
         <div className="card-img-planet">
           <img
-            className={ planet }
+            className={ planetNotacent }
             src={ planetImage }
             alt={ `Planeta ${planetName}` }
           />
